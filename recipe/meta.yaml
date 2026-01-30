@@ -1,6 +1,6 @@
 {% set name = "reef3d" %}
-{% set version = "25.12" %}
-{% set sha256 = "45763477c0fd5f8378475fd655608165016fa181a1f7102815c8a0c9ab6799f4" %}
+{% set version = "26.01" %}
+{% set sha256 = "dc84b1108ab6ca57a1a1b97d35375d2d36ec3ef4dc284feeda55b9b09c0ded5a" %}
 
 {% set mpi = mpi or 'openmpi' %}
 
