@@ -6,7 +6,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/REEF3D/REEF3D/archive/refs/tags/{{ version }}.tar.gz
