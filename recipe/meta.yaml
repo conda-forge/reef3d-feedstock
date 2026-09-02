@@ -1,16 +1,18 @@
 {% set name = "reef3d" %}
-{% set version = "26.01" %}
-{% set sha256 = "dc84b1108ab6ca57a1a1b97d35375d2d36ec3ef4dc284feeda55b9b09c0ded5a" %}
+{% set version = "26.08" %}
+{% set sha256 = "6f13adf4e5b7d15b5dd2dbbbe1c247a8a502ac201fe53967515c728f79bc7400" %}
 
 {% set mpi = mpi or 'openmpi' %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/REEF3D/REEF3D/archive/refs/tags/{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001_fix-whitespace.patch
 
 build:
   number: 0
